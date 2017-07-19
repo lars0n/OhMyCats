@@ -1,0 +1,181 @@
+/* ***************************** *\
+
+
+\* ***************************** */
+
+/* ***************************** *\
+            Style gobale
+\* ***************************** */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Merienda, serif;
+}
+
+/* ***************************** *\
+            navbar
+\* ***************************** */
+
+.navbar-cat {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background-color:  #061339;
+}
+
+.navbar-cat a.navbar-brand, .navbar-cat a.navbar-brand:hover, .navbar-cat a.navbar-brand:visited {
+    font-size: 22px;
+    font-family: Merienda, serif;
+    color: white;
+}
+
+/* ***************************** *\
+            header
+\* ***************************** */
+
+header {
+    min-height: 180px;
+    text-align: center;  
+    background: url('../img/background.jpg');
+    background-color: #B9CDFF;
+}
+
+header h1 {
+    line-height: 140px;
+    text-shadow: 2px 3px black;
+    color: #FFF;
+}
+
+/* ***************************** *\
+            section showRoom
+\* ***************************** */
+
+#showRoom {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+/* showRoom Form*/
+
+#showRoom h2 {
+    margin: 5px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #2F4073;
+}
+
+#showRoom form {
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    background-color: #f5f5f5;
+}
+
+#showRoom form textarea {
+    height: 207px;
+}
+
+#showRoom button {
+    width: 100%;
+}
+
+/* ***************************** *\
+            section about
+\* ***************************** */
+
+#about {
+    background-color: #dddddd;
+    padding-bottom: 20px;
+}
+
+/* about article */
+
+#about h2 {
+    color: #2F4073;
+    margin-bottom: 20px;
+}
+
+/* about img */
+
+#about img {
+    background-color: #7885A5;
+    transition: 0.5s;
+}
+
+#about .container:hover img {
+    background-color: #061339;
+}
+
+/* ***************************** *\
+            Footer
+\* ***************************** */
+
+footer {
+    padding: 5px 0;
+    text-align: right; 
+    color: white;
+    background-color: #061339;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ***************************** *\
+            Media query
+\* ***************************** */
+
+/*==========  Non-Mobile First Method  ==========*/
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+        #showRoom form textarea {
+            height: 128px;
+        }
+        #about img {
+            margin-top: 50px; 
+        }
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+        #showRoom h2 {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+        #showRoom form textarea {
+            height: 180px;
+        } 
+        #about h2 {
+            text-align: center;
+        }  
+        #about img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%); 
+            margin-top: 0px; 
+        }
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+        header h1 {
+            margin: 0;
+            margin-top: 55px; 
+            line-height: 40px;
+        }
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+        #showRoom h2 {
+            font-size: 22px;
+        }
+	}
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px){
+ 
+	}
